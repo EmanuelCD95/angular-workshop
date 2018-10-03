@@ -1,0 +1,15 @@
+<div style="text-align:center">
+
+<ul>
+  <li *ngFor="let task of (todoList$ | async); let i = index">
+      <input type="checkbox" [ngModel]="task.done" (click)="toggleTodo(i)"/>
+      {{task.name}}
+  </li>
+</ul>
+</div>
+
+<hr>
+
+<h3>Debug Stuff</h3>
+
+<pre>{{todoList$ | async | json}}</pre>
