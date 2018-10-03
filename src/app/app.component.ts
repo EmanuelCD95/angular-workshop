@@ -9,7 +9,7 @@ import { environment } from '@env/environment';
 export class AppComponent {
   title = 'tasteful-angular';
 
-  constructor () {                                
-    console.log({ environment });               
-}      
+  constructor() {
+    console.log({ environment });
+  }
 }
