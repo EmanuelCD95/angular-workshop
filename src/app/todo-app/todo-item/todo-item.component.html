@@ -1,0 +1,5 @@
+<div style="text-align:center">
+  <hr />
+  <input type="checkbox" [ngModel]="(todoList$ | async)[index].done" (click)="toggleTodo(index)" />
+  {{(todoList$ | async)[index].name}}
+</div>
